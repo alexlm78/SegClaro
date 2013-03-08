@@ -1,0 +1,8 @@
+README
+
+Description:
+------------
+Web Access for SegClaro Application on AS400
+
+Pretend give control over requests and response to/from serices external provider on SegClaro (AS400 and Java Versions programs).
+
