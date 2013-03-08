@@ -1,0 +1,140 @@
+@CHARSET "ISO-8859-1";
+/******************************************************************************/
+/* General styles                                                             */
+/******************************************************************************/
+html{
+    margin: 0px;
+	height:100%;
+}
+
+body {	
+    font-family: Verdana, Arial, Helvetica, sans-serif, Tahoma;
+    font-size: medium;
+    padding: 0px;
+    color: #000000;
+    background:rgb(74,81,85);
+	/*color: #2F6196;*/
+}
+
+table,th,td {
+	border:0px solid black;
+	color: #FFFFFF;
+}
+table{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+th {
+	text-align: center;
+}
+
+td {	
+	text-align:center;
+}
+
+input, textarea, button, select, option {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: small;   
+}
+
+/* select has a special font family to fix a problem in Simplified Chinese */
+select, option {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+div, span { 
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    width:100%;
+}
+
+pre {
+    font-family: monospace;
+    font-size: small;
+}
+
+a, .wpsLink, a:active, .wpsLink:active {
+    color: #3366CC;
+}
+
+a:visited, .wpsLink:visited { 
+    color: #3366CC;
+}
+
+a:hover, .wpsLink:hover { 
+    color: #3366CC;
+}
+
+.buttons  {  font-family: Verdana,Helvetica, sans-serif; 
+    font-size:100.0%; 
+    margin: 1px 2px 1px 2px; border-top: 1px outset #B1B1B1; 
+    border-right: 1px outset #000000; border-bottom: 1px outset #000000; 
+    border-left: 1px outset #B1B1B1; 
+    
+}  
+
+.noIndentTextEntry {
+    font-family: Verdana,sans-serif; 
+    font-size:100.0%;
+    }
+
+a:active 
+{
+	text-decoration: none;
+	color: #2F6196;
+	border: none;
+} 
+
+a:link 
+{
+	color: #2F6196;
+	text-decoration: none;
+	border: none;
+}
+
+a:visited 
+{
+	color: #2F6196;
+	text-decoration: none;
+	border: none;
+}
+
+a:hover
+{
+  text-decoration: underline;
+}
+
+H1,H2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif, Tahoma;
+	text-align: center;	
+	color: #68A2C9;
+}
+
+H3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif, Tahoma;
+	font-style: oblique;
+	text-align: center;	
+	color: #0015F9;
+}
+
+H4 {
+	font-style: oblique;
+	text-align: center;
+	color: #FF0000;
+}
+
+H5 {
+	font-style: oblique;
+	text-align: center;
+	color: #D07445;
+}
+
+#maind {
+	position: obsolute;
+	/*padding: 0px 0 385px 0;*/
+	height:100%;
+}
