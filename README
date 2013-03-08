@@ -4,5 +4,11 @@ Description:
 ------------
 Web Access for SegClaro Application on AS400
 
-Pretend give control over requests and response to/from serices external provider on SegClaro (AS400 and Java Versions programs).
+Pretend give control over requests and response to/from services external provider on SegClaro
+	(AS400 and Java Versions programs make the data generetion.).
 
+Features:
+---------
+* Show the list of purchase making on stores and which one was succesfully complete and which one don't.
+* Show the ID from the provider with the primary key (Virtual and FacCon)
+* Asign a record marked failed as a new trasnsaction, over verification data.
