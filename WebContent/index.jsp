@@ -17,7 +17,7 @@ Properties Props = new Properties();
 String propertyFileName = "conf.properties";
 Props.load(getClass().getClassLoader().getResourceAsStream(propertyFileName));
 String User = (request.getRemoteUser()!=null ? request.getRemoteUser() : "JL637879");
-Integer slvl = 25;
+int slvl = 25;
 %>
 </head>
 <body>
@@ -31,8 +31,8 @@ Integer slvl = 25;
 <div id="menu">
 	<ul class="menu">
 		<li><a href="index.jsp"><span>Indice</span></a></li>
-		<li><a href=""><span>Ordenes</span></a></li>
-		<li><a href=""><span>Maestro de ID's</span></a></li>
+		<li><a href="oss.jsp"><span>Ordenes</span></a></li>
+		<li><a href="mastid.jsp"><span>Maestro de ID's</span></a></li>
 		<li class="last"><a href="/PisaReports/"><span>Salir a PR!</span></a></li>
 	</ul>
 </div>
