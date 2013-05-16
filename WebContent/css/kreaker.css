@@ -21,3 +21,8 @@ h5{
 h6{
     text-align: center;
 }
+
+/* Makes yellow warning a more visible color.*/
+.table tbody tr.warning > td {
+  background-color: #FDEFA5;
+}

@@ -37,7 +37,7 @@ if ( user.getSecLvl()>=alvl ) {
 		    </div>
     	</div>
 		<div class="page-header">
-			<h1>Seguridad Claro</h1>			
+			<h1>Seguridad Claro WebApp</h1>			
 		</div>
 		<div class="row">
 		<div class="alert alert-success">

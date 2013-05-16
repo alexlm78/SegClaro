@@ -52,7 +52,7 @@ if ( user.getSecLvl()>=alvl ) {
 		    </div>
     	</div>
 		<div class="page-header">
-			<h1>Seguridad Claro</h1>
+			<h1>Seguridad Claro WebApp</h1>
 			<h3>Ordenes de Servicio</h3>			
 		</div>
 		<div class="row">

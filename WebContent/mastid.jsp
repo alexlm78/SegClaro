@@ -52,7 +52,7 @@ if ( user.getSecLvl()>=alvl ) {
 		    </div>
     	</div>
 		<div class="page-header">
-			<h1>Seguridad Claro</h1>
+			<h1>Seguridad Claro WebApp</h1>
 			<h3>Maestro de Identificadores</h3>
 		</div>
 		<div class="row">
@@ -108,17 +108,17 @@ try
 		</div>
 		<div class="pagination pagination-centered">
 			<ul>
-<%if(iPage-1<1){%><li class="disabled"><a href="#">&laquo;</a></li><%}else{%><li><a href="oss.jsp?page=<%=iPage-1%>">&laquo;</a></li><%}%>
+<%if(iPage-1<1){%><li class="disabled"><a href="#">&laquo;</a></li><%}else{%><li><a href="mastid.jsp?page=<%=iPage-1%>">&laquo;</a></li><%}%>
 <%				
 int pag = (int) Math.ceil((double)rTot/10);
 for ( int i=1; i<=pag; i++)
 {
 %>
-				<li<%=(i==iPage)?" class=\"active\"":""%>><a href="oss.jsp?page=<%=i%>"><%=i%></a></li>
+				<li<%=(i==iPage)?" class=\"active\"":""%>><a href="mastid.jsp?page=<%=i%>"><%=i%></a></li>
 <%
 }
 %>
-<%if(iPage+1>pag){%><li class="disabled"><a href="#">&raquo;</a></li><%}else{%><li><a href="oss.jsp?page=<%=iPage+1%>">&raquo;</a></li><%}%>
+<%if(iPage+1>pag){%><li class="disabled"><a href="#">&raquo;</a></li><%}else{%><li><a href="mastid.jsp?page=<%=iPage+1%>">&raquo;</a></li><%}%>
 			</ul>
 		</div>
 	</div>
