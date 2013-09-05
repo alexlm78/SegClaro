@@ -120,7 +120,7 @@ for ( int i=1; i<=pag; i++)
 %>
 <%if(iPage+1>pag){%><li class="disabled"><a href="#">&raquo;</a></li><%}else{%><li><a href="mastid.jsp?page=<%=iPage+1%>">&raquo;</a></li><%}%>
 			</ul>
-		</div>
+		</div> <!-- pagination -->
 	</div>
 	<footer class="footer">
 		<div class="navbar navbar-fixed-bottom">
