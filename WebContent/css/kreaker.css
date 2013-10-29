@@ -26,3 +26,11 @@ h6{
 .table tbody tr.warning > td {
   background-color: #FDEFA5;
 }
+
+body {  
+  padding-top: 50px;
+}
+
+.pagination-centered {
+  text-align: center;
+}

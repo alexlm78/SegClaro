@@ -9,10 +9,14 @@
 	<meta charset="UTF-8">
 	<title>Seguridad Claro</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
-	<link rel="stylesheet" type="text/css" href="css/kreaker.css">
+	<link href="images/favicon.ico" rel="shortcut icon">
+	<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/kreaker.css" rel="stylesheet">
 </head>
 <%
 Properties Props = new Properties();
@@ -24,18 +28,25 @@ Users user = new Users(Props,User);
 if ( user.getSecLvl()>=alvl ) {
 %>
 <body>
-	<div class="container">
-		<div class="navbar">
-    		<div class="navbar-inner">
-			    <a class="brand" href="index.jsp">SegClaro</a>
-			    <p class="navbar-text pull-right"><span class="label label-info"><%=User%></span></p>
-			    <ul class="nav">				    
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+		        <a class="navbar-brand" href="index.jsp">SegClaro</a>
+	        </div>
+	        <div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
 				    <li><a href="oss.jsp">Ordenes</a></li>
 				    <li><a href="mastid.jsp">Maestro de ID's</a></li>
 				    <li><a href="/PisaReports/Main">Salir a PR!</a></li>				    
 			    </ul>
-		    </div>
-    	</div>
+			    <ul class="nav navbar-nav navbar-right">
+			    	<li><a href="#"><span class="label label-primary"><%=User%></span></a></li>
+			    </ul>
+			</div>
+		</div>
+    </div><!-- Fixed navbar End -->
+	<div class="container">
 		<div class="page-header">
 			<h1>Seguridad Claro WebApp</h1>			
 		</div>
@@ -46,10 +57,9 @@ if ( user.getSecLvl()>=alvl ) {
 		</div>
 	</div>
 	</div>
+	<!-- Footer -->
 	<footer class="footer">
-		<div class="navbar navbar-fixed-bottom">
-			<div class="span12 text-left"><span class="label">Copyright &copy; 2013 Alejandro Lopez Monzon</span></div>
-		</div>
+		<div class="col-md-12 text-left"><span class="label label-default">Copyright &copy; 2013 Alejandro Lopez Monzon</span></div>
 	</footer>
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
