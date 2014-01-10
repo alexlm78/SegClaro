@@ -140,7 +140,7 @@ try
 	while ( rs.next() )
 	{
 %>
-						<tr<%=(rs.getString("SVSGDSTA").compareTo("E")==0)?" class=\"warning\"" : (rs.getString("SVSGDSTA").compareTo("F")==0)?" class=\"danger\"":(rs.getString("SVSGDSTA").compareTo("P")==0)?" class=\"success\"":""%>>
+						<tr<%=(rs.getString("SVSGDSTA").compareTo("E")==0)?" class=\"warning\"" : (rs.getString("SVSGDSTA").compareTo("F")==0)?" class=\"danger\"":(rs.getString("SVSGDSTA").compareTo("P")==0)?" class=\"success\"":(rs.getString("SVSGDSTA").compareTo("B")==0)?" class=\"active\"":""%>>
 							<td><%=rs.getString("SVSGDSOÑ")%></td>
 							<td><%=rs.getString("SVSGDPHÑ")%></td>
 							<td><%=rs.getString("SVSGDMBÑ")%></td>
