@@ -36,7 +36,7 @@ String query="";
 int iPage=1;	// ?page=
 int rTot=0;		// Register sums
 int cPerPage = (session.getAttribute("pPage")!=null) ? (new Integer(session.getAttribute("pPage").toString())).intValue() : 25;
-ArrayList filts = null;
+ArrayList<String> filts = null;
 
 // Pagination values.
 if( request.getParameter("perPage")!= null )
@@ -48,7 +48,7 @@ if ( request.getParameter("page")!= null )
 // search criteria.
 if ( request.getParameter("valor")!= null && request.getParameter("valor").length()>0)
 {
-	filts = new ArrayList();
+	filts = new ArrayList<String>();
 	filts.add(request.getParameter("filtro"));
 	filts.add(request.getParameter("valor"));
 	iPage=1;
